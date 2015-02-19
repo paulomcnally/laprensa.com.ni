@@ -1,0 +1,143 @@
+<html>
+<style>
+html, body, a {
+    height: 100%;
+    color:#000;
+}
+
+.left {
+	display:table-cell;
+	min-width:42px;
+	padding-right:4px;
+}
+
+.twodots {
+	display:table-cell;
+min-height:12px;
+    width:100%;
+    background-image: url('2dots.png');
+    background-position:left center;
+    background-repeat:repeat-x;
+	vertical-align:top;
+}
+
+
+.line-container {
+	display:table-cell;
+	width:100%;
+}
+.line {
+height:1px;
+margin-bottom:0.2em;
+width:100%;
+background:#717171;
+border-bottom:1px solid #313030;
+}
+#sup-line {
+    position: absolute;
+width:100%;
+    top: -0.8em;
+    padding-right: 6px;
+    background-color: #F9F9EE;
+}
+#breveswrapper{
+float: left;
+height:40px;
+width: 100%;
+border: 1px solid #ccc;
+}
+
+#brevescolumn{
+margin-right: 88px; /*Set right margin to (LeftColumnWidth + RightColumnWidth)*/
+display:table-cell;
+background: #FDE95E;
+}
+
+#brevesleftcolumn{
+float: left;
+display:table-cell;
+width: 40px; /*Width of left column in percentage*/
+height:40px;
+margin-left: -88px; /*Set left margin to -(LeftColumnWidth + RightColumnWidth)*/
+background: #C8FC98;
+border: 1px solid #ccc;
+}
+
+#brevesrightcolumn{
+float: left;
+display:table-cell;
+width: 40px; /*Width of right column in pixels*/
+height:40px;
+margin-left: -44px; /*Set margin to -(RightColumnWidth)*/
+background: #FDE95E;
+border: 1px solid #ccc;
+}
+.su-carousel .su-carousel-prev, .su-carousel .su-carousel-next {
+position: absolute;
+top: 50%;
+display: block;
+width: 40px;
+height: 40px;
+margin-top: -22px;
+background: rgb(0, 0, 0) 0 0 url('http://laprensa18.doap.us/wp-content/plugins/shortcodes-ultimate/assets/images/swiper/default.png') no-repeat;
+}
+.su-carousel .su-carousel-next {
+left: 20px;
+margin-left: 40px;
+background-position: 0 0;
+}
+.su-carousel .su-carousel-prev {
+right: 20px;
+margin-right: 40px;
+background-position: -40px 0;
+}
+</style>
+
+<body>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/destacados"><div id="des-sec" class="left">DESTACADOS </div><div id="des-dot" class="twodots"></div></a></div>
+<br>
+<div class="line-separator"></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/deportes"><div id="dep-sec" class="left">DEPORTES </div><div id="dep-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/reportajes-especiales"><div id="rep-sec" class="left">REPORTAJE </div><div id="rep-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/vida"><div id="vid-sec" class="left">VIDA </div><div id="vid-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/tecnologia"><div id="tec-sec" class="left">TECNOLOGÍA </div><div id="tec-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/caricaturas"><div id="car-sec" class="left">CARICATURAS </div><div id="car-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/destacados"><div id="opi-sec" class="left">OPINIÓN </div><div id="opi-dot" class="twodots"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/destacados"><div id="sup-sec" class="left">SUPPLEMENTOS </div><div id="sup-line"></div></a></div>
+<br>
+<div class="section-title"><a href="http://noticias.laprensa.com.ni/destacados"><div id="sup-sec" class="left">SUPPLEMENTOS </div><div class="line-container"><div class="line"></div></div></a></div>
+<br>
+<br>
+<div class="su-carousel-direction"><span class="su-carousel-prev"></span><span class="su-carousel-next"></span></div>
+<br>
+<div id="contentwrapper">
+<div id="contentcolumn"></div>
+<div id="leftcolumn"></div>
+<div id="rightcolumn"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="breveswrapper"><div id="brevescolumn"></div></div><div id="brevesleftcolumn"></div><div id="brevesrightcolumn"></div>
+
+<br>
+<br>
+<br>
+<div class="line-separator"></div>
+<div style="height:200px;width:200px;background-color:#ccc;">
+<img src="http://noticias.laprensa.com.ni/wp-content/uploads/sites/2/2014/05/bubble-0.gif">
+<img src="http://noticias.laprensa.com.ni/wp-content/uploads/sites/2/2014/05/bubbles1.png">
+<img src="http://noticias.laprensa.com.ni/wp-content/uploads/sites/2/2014/05/bubble-1.gif">
+</div>
+
+</body>
+</html>
