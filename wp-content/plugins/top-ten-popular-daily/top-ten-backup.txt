@@ -1,0 +1,15 @@
+[doap_spacer size="10"]
+[doap_tabs style="modern-light"]
+[doap_tab title="Noticias más leídas"][doap_box title="Noticias más leídas" style="soft" box_color="#eee" title_color="#369" radius="0" class="archivo-aside"]
+
+[top-ten-popular-daily]
+
+[/doap_box]
+[/doap_tab]
+
+[doap_tab title="Últimas noticias"]
+[doap_box title="Últimas noticias" style="soft" box_color="#eee" title_color="#369" radius="0" class="archivo-aside"]
+[doap_posts template="templates/list-loop.php" posts_per_page="10" tax_term="3518,1673,17,31,22,3,21,25763,10,3519,27,991" tax_operator="0" offset="0" order="desc" post_parent=" " ignore_sticky_posts="yes"]
+[/doap_box]
+[/doap_tab]
+[/doap_tabs]

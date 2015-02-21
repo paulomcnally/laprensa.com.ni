@@ -1,0 +1,39 @@
+<html>
+<body>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
+<style>
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+</style>
+
+<div class="banner">
+    <ul>
+        <li><div style="width:100px;height:100px;background-color:#ccc;This is a slide.</li>
+        <li>This is another slide.</li>
+        <li>This is a final slide.</li>
+    </ul>
+</div>
+<!-- The HTML -->
+<a href="#" class="unslider-arrow prev">Previous slide</a>
+<a href="#" class="unslider-arrow next">Next slide</a>
+
+<!-- And the JavaScript -->
+<script>
+    var unslider = $('.banner').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+</script>
+<script>
+$(function() {
+    $('.banner').unslider();
+});
+</script>
+</body>
+</html>
